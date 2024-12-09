@@ -1,0 +1,230 @@
+:root {
+    --primary-font: 'Caveat', cursive; /* Primary font */
+    --butterscotch: #D59148; /* Warm accent color for hover */
+    --cocoa-brown: #C76D31; /* Rich accent color for buttons and hover */
+    --dun: #ffffff; /* White for navbar and hero background */
+    --cadet-gray: #98AFB4; /* Soft gray for process section background */
+    --ash-gray: #A9B39E; /* Neutral light gray for features background */
+}
+
+/* General Body Styles */
+body {
+    margin: 0;
+    font-family: var(--primary-font); /* Apply Caveat font globally */
+    font-weight: bold; /* Make text bold */
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black color for all text */
+}
+
+/* Links */
+a {
+    color: #000000; /* Black color for links */
+    text-decoration: none; /* Remove underline from links */
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: var(--butterscotch); /* Butterscotch for hover state */
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--dun); /* White for navbar background */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    max-width: 300px; /* Adjust the size of the logo */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    font-family: var(--primary-font); /* Use Caveat font for nav links */
+    font-weight: bold; /* Make nav links bold */
+    color: #000000; /* Black color for navigation links */
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--butterscotch); /* Butterscotch for hover state */
+}
+
+.quote-button {
+    background-color: var(--butterscotch); /* Butterscotch for button background */
+    color: #000000; /* Black text for button */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: var(--primary-font); /* Use Caveat font for button */
+    font-weight: bold; /* Make button text bold */
+}
+
+.quote-button:hover {
+    background-color: var(--cocoa-brown); /* Cocoa brown for button hover */
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding: 50px;
+    background-color: var(--dun); /* White for hero background */
+    color: #000000; /* Black color for hero text */
+}
+
+.hero-content {
+    max-width: 1400px;
+}
+
+.hero h1 {
+    font-family: var(--primary-font); /* Use Caveat font for hero heading */
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold; /* Make hero heading bold */
+    color: #000000; /* Black color for hero heading */
+}
+
+.hero p {
+    font-family: var(--primary-font); /* Use Caveat font for hero text */
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-weight: bold; /* Make hero paragraph bold */
+    color: #000000; /* Black color for hero paragraph */
+}
+
+.cta-button {
+    background-color: var(--butterscotch); /* Butterscotch for button background */
+    color: #000000; /* Black text for button */
+    border: none;
+    padding: 15px 25px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: var(--primary-font); /* Use Caveat font for button */
+    font-weight: bold; /* Make button text bold */
+}
+
+.cta-button:hover {
+    background-color: var(--cocoa-brown); /* Cocoa brown for button hover */
+}
+
+/* Features Section */
+.features {
+    background-color: var(--ash-gray); /* Light gray for features background */
+    padding: 20px;
+    font-family: var(--primary-font); /* Use Caveat font */
+    font-weight: bold; /* Bold text */
+    color: #000000; /* Black color for features text */
+}
+
+/* Footer Section */
+.footer {
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text */
+    font-family: var(--primary-font); /* Use Caveat font */
+    font-weight: bold;
+    padding: 40px 50px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Ensure responsive layout */
+    gap: 20px;
+}
+
+.footer-logo {
+    flex: 1 1 20%; /* Allow dynamic resizing for responsiveness */
+    max-width: 25%;
+}
+
+.footer-links {
+    display: flex;
+    flex: 1 1 40%; /* Flex container for links */
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 50%;
+}
+
+.footer-links div {
+    flex: 1; /* Equal width for each section */
+}
+
+.footer-contact {
+    flex: 1 1 20%; /* Allow dynamic resizing for responsiveness */
+    max-width: 25%;
+}
+
+.footer-contact p {
+    line-height: 1.6;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 20px 0 0;
+    margin-top: 20px;
+    border-top: 1px solid #ddd; /* Subtle border to separate sections */
+    font-size: 0.9rem;
+    color: #000000; /* Black text for footer bottom */
+}
+
+/* Links Styling */
+.footer h3,
+.footer h4 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #000000; /* Black heading text */
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer a {
+    color: #000000; /* Black link color */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: var(--butterscotch); /* Butterscotch for hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Stack items on small screens */
+        align-items: flex-start;
+    }
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
