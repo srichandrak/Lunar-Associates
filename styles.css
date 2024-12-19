@@ -225,8 +225,22 @@ body {
 /* Responsive Design */
 @media (max-width: 768px) {
     /* Navbar Mobile Styles */
+    .navbar {
+        position: relative;
+        justify-content: center; /* Centering contents in mobile */
+    }
+
+    .logo {
+        margin: 0 auto;
+        text-align: center;
+    }
+
     .menu-toggle {
         display: flex;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
     }
 
     .nav-menu {
@@ -246,7 +260,6 @@ body {
     }
 
     .nav-links {
-        justify-content: space-between;
         width: 100%;
     }
 
