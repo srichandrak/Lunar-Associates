@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How We Work - Lunar Associates</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-font: 'Roboto Serif', serif;
+            --butterscotch: #D59148;
+            --cocoa-brown: #C76D31;
+            --dun: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--primary-font);
+            font-weight: bold;
+            color: #000000;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/api/placeholder/1920/400');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        /* Process Section */
+        .process-intro {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: var(--dun);
+        }
+
+        .process-intro h2 {
+            font-size: 2rem;
+            color: #000000;
+            margin-bottom: 20px;
+        }
+
+        .process-intro p {
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .process-steps {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .step {
+            display: flex;
+            align-items: center;
+            margin-bottom: 50px;
+            gap: 40px;
+        }
+
+        .step:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        .step-content {
+            flex: 1;
+        }
+
+        .step-image {
+            flex: 1;
+            max-width: 500px;
+        }
+
+        .step-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .step-number {
+            color: var(--butterscotch);
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .step h3 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        .step p {
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            background-color: var(--butterscotch);
+            color: #000000;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .contact-btn:hover {
+            background-color: var(--cocoa-brown);
+        }
+
+        @media (max-width: 768px) {
+            .step {
+                flex-direction: column !important;
+                text-align: center;
+            }
+
+            .step-image {
+                max-width: 100%;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <h1>How We Work</h1>
+    </section>
+
+    <section class="process-intro">
+        <h2>Simplifying the Permit Process for Your Convenience</h2>
+        <p>Our efficient permit management system provides clear solutions that streamline the process from project inception to final permit approval.</p>
+        <br>
+        <a href="#" class="contact-btn">CONTACT US</a>
+    </section>
+
+    <div class="process-steps">
+        <div class="step">
+            <div class="step-content">
+                <div class="step-number">1</div>
+                <h3>Investigate</h3>
+                <p>Our first step is investigating your permit requirements. Our team of experts will work closely with you to understand the scope of your project and the permits you need. We will provide a detailed review to determine what documentation or inspections may be required. Our goal is to ensure that you have a comprehensive understanding of the requirements before proceeding with your project.</p>
+            </div>
+            <div class="step-image">
+                <img src="/api/placeholder/500/300" alt="Investigation phase">
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-content">
+                <div class="step-number">2</div>
+                <h3>Submit</h3>
+                <p>Once we have a clear understanding of the permit requirements, it's time to submit your application. We help streamline this process by ensuring you have the necessary forms and documentation gathered. Our experienced team will carefully review all submissions to ensure required information is included and that it meets the application standards and regulations.</p>
+            </div>
+            <div class="step-image">
+                <img src="/api/placeholder/500/300" alt="Submission phase">
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-content">
+                <div class="step-number">3</div>
+                <h3>Track</h3>
+                <p>Keeping track of your permit application progress is essential for project planning. Our dedicated project management team monitors every step of the way, providing regular updates and ensuring timely responses to any inquiries.</p>
+            </div>
+            <div class="step-image">
+                <img src="/api/placeholder/500/300" alt="Tracking phase">
+            </div>
+        </div>
+
+        <div class="step">
+            <div class="step-content">
+                <div class="step-number">4</div>
+                <h3>Approve</h3>
+                <p>The process concludes with obtaining the necessary permit approvals. Once all requirements have been met and reviewed, our team will work diligently to secure the permits on your behalf. We'll coordinate with relevant authorities and ensure that all necessary documentation is processed efficiently.</p>
+            </div>
+            <div class="step-image">
+                <img src="/api/placeholder/500/300" alt="Approval phase">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
